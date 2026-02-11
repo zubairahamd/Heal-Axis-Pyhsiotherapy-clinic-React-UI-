@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
 
 import {
-  FaPhoneAlt,
+  FaPhoneAlt, 
   FaEnvelope,
   FaMapMarkerAlt,
   FaFacebookF,

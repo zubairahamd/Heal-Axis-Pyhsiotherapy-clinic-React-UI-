@@ -5,6 +5,7 @@ import sports from "../../../assets/img/sports.png";
 import surgery from "../../../assets/img/surgery.png";
 import joint from "../../../assets/img/joint.png";
 
+
 const treatments = [
   {
     title: "FUNCTIONAL MANUAL THERAPY®",
@@ -95,7 +96,7 @@ const OurTreatmentSection = () => {
                                  text-green-700 font-medium
                                  hover:text-green-800 transition"
                     >
-                      Read More <span>→</span>
+                      See All Therapies <span>→</span>
                     </NavLink>
                   </div>
                 </div>
@@ -103,21 +104,6 @@ const OurTreatmentSection = () => {
             </div>
           ))}
         </div>
-
-        {/* Bottom Button */}
-        <div className="text-center mt-20">
-          <NavLink
-            to="/therapies"
-            className="inline-flex items-center gap-2
-                       bg-green-700 text-white
-                       hover:bg-green-800
-                       px-8 py-3 rounded-lg
-                       transition font-medium shadow-md"
-          >
-            Our Therapies <span>→</span>
-          </NavLink>
-        </div>
-
       </div>
     </section>
   );

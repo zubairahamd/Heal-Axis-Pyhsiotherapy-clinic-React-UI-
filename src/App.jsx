@@ -6,6 +6,7 @@ import About from './component/Pages/about/About'
 import Therapies from './component/Pages/therapies/Therapies'
 import Contact from './component/Pages/Contact/Contact'
 import BookOnline from './component/Pages/bookonline/BookOnline'
+import TherapyDetails from './component/Pages/therapies/TherapyDetails'
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
           <Route path='/' element={<Home/>}></Route>
           <Route path='/about' element={<About/>}></Route>
           <Route path='/therapies' element={<Therapies/>}></Route>
-          <Route path='/bookonline' element={<BookOnline/>}></Route>
+          <Route path='/therapies/:id' element={<TherapyDetails />} />
+          <Route path='/book' element={<BookOnline/>}></Route>  
           <Route path='/contact' element={<Contact/>}></Route>
         </Routes>
       </Layout>

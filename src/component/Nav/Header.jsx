@@ -11,7 +11,7 @@ const Header = () => {
      ${isActive ? "after:w-full" : "after:w-0 hover:after:w-full"}`;
 
   return (
-    <header className="bg-white/90 backdrop-blur border-b border-gray-100 sticky top-0 z-50">
+    <header className="bg-white/90  bg-transparent backdrop-blur border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
 
         {/* Logo + Brand */}

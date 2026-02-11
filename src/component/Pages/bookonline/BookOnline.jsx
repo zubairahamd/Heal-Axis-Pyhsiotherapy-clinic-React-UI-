@@ -1,10 +1,13 @@
 import React from 'react'
+import BookHero from './BookHero'
+import BookHeroContent from './BookHeroContent'
 
 const BookOnline = () => {
   return (
-    <div>
-      <h1>bookonline</h1>
-    </div>
+    <>
+      <BookHero/>
+      {/* <BookHeroContent/> */}
+    </>
   )
 }
 

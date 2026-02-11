@@ -3,17 +3,21 @@ import { NavLink } from "react-router-dom";
 
 const AboutSection = () => {
   return (
-    <section className="w-full py-24  from-green-50 to-white">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <section className="w-full py-10 from-green-50 to-white">
+      <div className="max-w-7xl mx-auto px-10 grid md:grid-cols-2 gap-16 items-center">
 
         {/* Image Card */}
         <div className="relative">
           <div className="absolute -inset-3 bg-green-200 rounded-3xl blur-xl opacity-40"></div>
-          <img
-            src={aboutImg}
-            alt="Heal Axis Physiotherapy at Home"
-            className="relative w-full rounded-3xl shadow-xl object-cover"
-          />
+
+          {/* Image height controlled from bottom */}
+          <div className="relative w-full h-[540px] overflow-hidden rounded-3xl shadow-xl">
+            <img
+              src={aboutImg}
+              alt="Heal Axis Physiotherapy at Home"
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
         </div>
 
         {/* Content */}
@@ -66,8 +70,7 @@ const AboutSection = () => {
                        hover:bg-green-800 px-7 py-3 rounded-lg
                        transition font-medium shadow-md"
           >
-            Know More
-            <span>→</span>
+            Know More <span>→</span>
           </NavLink>
         </div>
 

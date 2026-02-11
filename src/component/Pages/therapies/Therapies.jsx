@@ -1,10 +1,15 @@
 import React from 'react'
+import TherapiesHero from './TherapiesHero'
+import TherapyGrid from './TherapyGrid'
+
 
 const Therapies = () => {
   return (
-    <div>
-      <h1>therapies</h1>
-    </div>
+    <>
+      <TherapiesHero/>
+      <TherapyGrid/>
+      {/* <TherapyDetails/> */}
+    </>
   )
 }
 

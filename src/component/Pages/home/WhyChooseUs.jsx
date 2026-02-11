@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <span className="inline-block bg-green-100 text-green-800 text-sm font-medium px-4 py-1 rounded-full mb-3">
             Why Choose Us
           </span>
@@ -52,7 +52,7 @@ const WhyChooseUs = () => {
         <div className="relative">
 
           {/* Center Line */}
-          <div className="absolute left-1/2 top-0 h-full w-[2px] bg-green-200 -translate-x-1/2"></div>
+          <div className="absolute left-1/2 top-0 h-full w-[6px] bg-green-200 -translate-x-1/2"></div>
 
           {/* Items */}
           <div className="flex flex-col space-y-1">
