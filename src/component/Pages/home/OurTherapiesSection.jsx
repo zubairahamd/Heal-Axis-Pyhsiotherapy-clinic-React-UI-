@@ -5,7 +5,6 @@ import sports from "../../../assets/img/sports.png";
 import surgery from "../../../assets/img/surgery.png";
 import joint from "../../../assets/img/joint.png";
 
-
 const treatments = [
   {
     title: "FUNCTIONAL MANUAL THERAPY®",
@@ -31,57 +30,53 @@ const treatments = [
 
 const OurTreatmentSection = () => {
   return (
-    <section className="py-2 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-10 md:py-14 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Heading */}
-        <div className="text-center mb-16">
-          <span className="inline-block bg-green-100 text-green-800 text-sm font-medium px-4 py-1 rounded-full mb-3">
+        <div className="text-center mb-12 md:mb-16">
+          <span className="inline-block bg-green-100 text-green-800 text-xs sm:text-sm font-medium px-4 py-1 rounded-full mb-3">
             Our Treatment
           </span>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Trusted Care for{" "}
-            <span className="text-green-700">Better Recovery</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+            Trusted Care for <span className="text-green-700">Better Recovery</span>
           </h2>
 
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-600 mt-3 text-sm sm:text-base max-w-2xl mx-auto">
             Evidence-based physiotherapy treatments focused on pain relief,
             recovery, and long-term wellness.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="space-y-12">
+        <div className="space-y-8 md:space-y-12">
           {[0, 2].map((startIndex) => (
             <div
               key={startIndex}
-              className="relative grid grid-cols-1 md:grid-cols-2 gap-10"
+              className="relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10"
             >
-              {/* Subtle Vertical Line */}
-              <span className="hidden md:block absolute left-1/2 top-0 h-full w-px
-                                from-transparent via-green-600/40 to-transparent">
-              </span>
+
+              {/* Vertical Divider */}
+              <span className="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gradient-to-b from-transparent via-green-600/40 to-transparent"></span>
 
               {treatments.slice(startIndex, startIndex + 2).map((item, index) => (
                 <div
                   key={index}
-                  className="flex gap-6 bg-white rounded-2xl p-6
-                             shadow-sm hover:shadow-md
-                             hover:-translate-y-1
-                             transition-all duration-300"
+                  className="flex flex-col sm:flex-row gap-4 sm:gap-6 bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
                 >
+
                   {/* Image */}
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="w-28 h-28 rounded-xl object-cover"
+                    className="w-full sm:w-28 h-40 sm:h-28 rounded-lg object-cover"
                   />
 
                   {/* Content */}
                   <div className="flex flex-col justify-between">
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">
                         {item.title}
                       </h3>
 
@@ -92,18 +87,18 @@ const OurTreatmentSection = () => {
 
                     <NavLink
                       to="/therapies"
-                      className="mt-4 inline-flex items-center gap-2
-                                 text-green-700 font-medium
-                                 hover:text-green-800 transition"
+                      className="mt-4 inline-flex items-center gap-2 text-green-700 font-medium hover:text-green-800 transition text-sm"
                     >
-                      See All Therapies <span>→</span>
+                      See All Therapies →
                     </NavLink>
                   </div>
+
                 </div>
               ))}
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
