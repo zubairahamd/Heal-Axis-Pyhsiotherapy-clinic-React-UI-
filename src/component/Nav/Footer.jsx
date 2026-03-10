@@ -95,7 +95,7 @@ const Footer = () => {
 
           <p className="mt-4 text-sm">
             <span className="font-semibold text-white">Working Hours:</span><br />
-            6:00 PM – 10:00 PM
+            4:00 PM – 10:00 PM
           </p>
         </div>
 
@@ -117,7 +117,7 @@ const Footer = () => {
 
           <p className="flex items-center gap-3 text-sm mb-4">
             <FaEnvelope className="text-green-500" />
-            zubaira@gmail.com
+            zubairahmad7866r@gmail.com
           </p>
 
           <NavLink

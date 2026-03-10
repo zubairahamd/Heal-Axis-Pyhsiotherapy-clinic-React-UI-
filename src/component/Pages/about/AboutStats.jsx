@@ -19,7 +19,7 @@ const stats = [
 
 const AboutStats = () => {
   return (
-    <section className="w-full bg-gray-50 py-16">
+    <section className="w-full bg-gray-50 py-5">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         {/* Section Heading */}

@@ -32,62 +32,64 @@ const data = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-10 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-12 md:py-5 bg-gray-50/50">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6">
 
         {/* Heading */}
-        <div className="text-center mb-10">
-          <span className="inline-block bg-green-100 text-green-800 text-sm font-medium px-4 py-1 rounded-full mb-3">
+        <div className="text-center mb-12 md:mb-16">
+          <span className="inline-block bg-green-100 text-green-800 text-xs sm:text-sm font-medium px-4 py-1 rounded-full mb-3">
             Why Choose Us
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
             Trusted Physiotherapy Care
           </h2>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            We combine technology, experience and personalized care.
+          <p className="text-gray-600 mt-3 max-w-xl mx-auto text-sm sm:text-base">
+            We combine technology, experience and personalized care to ensure your well-being.
           </p>
         </div>
 
-        {/* Timeline */}
+        {/* Timeline Container */}
         <div className="relative">
 
-          {/* Center Line */}
-          <div className="absolute left-1/2 top-0 h-full w-[6px] bg-green-200 -translate-x-1/2"></div>
+          {/* Center Line - Hidden on Mobile */}
+          <div className="hidden md:block absolute left-1/2 top-0 h-full w-[2px] bg-green-200 -translate-x-1/2"></div>
 
-          {/* Items */}
-          <div className="flex flex-col space-y-1">
+          {/* Items - space-y-8 for mobile gap */}
+          <div className="flex flex-col space-y-8 md:space-y-0">
             {data.map((item, index) => (
               <div
                 key={index}
-                className={`relative flex items-start ${
-                  item.side === "left" ? "md:justify-start" : "md:justify-end"
+                className={`relative flex items-center md:mb-12 ${
+                  item.side === "left" ? "md:flex-row-reverse" : "md:flex-row"
                 }`}
               >
-                {/* Card */}
-                <div
-                  className={`w-full md:w-5/12 bg-white rounded-2xl shadow-md transition-all
-                  ${item.side === "left" ? "md:mr-auto mt-0" : "md:ml-auto mt-3"}`}
-                >
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="w-full h-36 object-cover rounded-t-2xl"
-                  />
+                {/* Content Card */}
+                <div className="w-full md:w-[45%]">
+                  <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="w-full h-40 sm:h-48 md:h-44 object-cover"
+                    />
 
-                  <div className="p-5">
-                    <h3 className="text-lg font-semibold text-gray-800 mb-1">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {item.desc}
-                    </p>
+                    <div className="p-5 sm:p-6">
+                      <h3 className="text-lg font-bold text-gray-800 mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm leading-relaxed text-justify sm:text-left">
+                        {item.desc}
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                {/* Dot */}
-                <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-6">
-                  <div className="w-3 h-3 bg-green-600 rounded-full border-2 border-white"></div>
+                {/* Dot - Hidden on Mobile */}
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 justify-center items-center w-8 h-8">
+                  <div className="w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow-sm z-10"></div>
                 </div>
+
+                {/* Empty Space for opposite side on Desktop */}
+                <div className="hidden md:block md:w-[45%]"></div>
               </div>
             ))}
           </div>
