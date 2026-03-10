@@ -74,7 +74,7 @@ const Header = () => {
                        font-bold text-sm shadow-md shadow-green-200
                        hover:bg-green-800 hover:shadow-lg transition-all active:scale-95"
           >
-            Book Online
+            Book Now
           </NavLink>
         </nav>
 

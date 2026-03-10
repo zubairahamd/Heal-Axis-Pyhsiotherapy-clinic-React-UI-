@@ -9,7 +9,6 @@ const Therapies = () => {
     <>
       <TherapiesHero/>
       <TherapyGrid/>
-      <TherapyDetails/>
       {/* <TherapyDetails/> */}
     </>
   )

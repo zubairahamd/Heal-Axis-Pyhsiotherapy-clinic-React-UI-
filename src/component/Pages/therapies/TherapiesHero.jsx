@@ -34,7 +34,7 @@ const TherapiesHero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <NavLink
-                to="/book-online"
+                to="/book"
                 className="inline-flex items-center justify-center
                            bg-green-700 text-white font-medium
                            px-8 py-3 rounded-lg

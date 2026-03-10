@@ -18,7 +18,7 @@ const AboutCTA = () => {
 
         {/* CTA Button */}
         <NavLink
-          to="/book-online"
+          to="/book"
           className="inline-flex items-center justify-center
                      bg-white text-green-700 font-semibold
                      px-8 py-3 rounded-xl
