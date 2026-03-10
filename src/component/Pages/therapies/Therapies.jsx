@@ -1,6 +1,7 @@
 import React from 'react'
 import TherapiesHero from './TherapiesHero'
 import TherapyGrid from './TherapyGrid'
+import TherapyDetails from './TherapyDetails'
 
 
 const Therapies = () => {
@@ -8,6 +9,7 @@ const Therapies = () => {
     <>
       <TherapiesHero/>
       <TherapyGrid/>
+      <TherapyDetails/>
       {/* <TherapyDetails/> */}
     </>
   )

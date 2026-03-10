@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-// import slide1 from "../../../assets/img/slide1.png";
+import slide1 from "../../../assets/img/slide1.png";
 import slide2 from "../../../assets/img/slide2.png";
 import slide3 from "../../../assets/img/slide3.png";
 
 const slides = [
-  // {
-  //   image: slide1,
-  //   title: "Pain Relief Physiotherapy",
-  //   desc: "Evidence-based physiotherapy to reduce pain, restore movement, and improve quality of life.",
-  // },
+  {
+    image: slide1,
+    title: "Pain Relief Physiotherapy",
+    desc: "Evidence-based physiotherapy to reduce pain, restore movement, and improve quality of life.",
+  },
   {
     image: slide2,
     title: "Sports Injury Rehabilitation",
@@ -37,7 +37,7 @@ const Hero = () => {
     <section className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
       {/* Background Slides */}
       {slides.map((slide, index) => (
-        <img
+        <img  
           key={index}
           src={slide.image}
           alt={slide.title}

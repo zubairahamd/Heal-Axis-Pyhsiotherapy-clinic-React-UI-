@@ -6,11 +6,13 @@ import About from './component/Pages/about/About'
 import Therapies from './component/Pages/therapies/Therapies'
 import Contact from './component/Pages/Contact/Contact'
 import BookOnline from './component/Pages/bookonline/BookOnline'
+import ScrollToTop from './component/js/ScrollToTop'
 import TherapyDetails from './component/Pages/therapies/TherapyDetails'
 
 const App = () => {
   return (
     <>
+    <ScrollToTop/>
       <Layout>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
