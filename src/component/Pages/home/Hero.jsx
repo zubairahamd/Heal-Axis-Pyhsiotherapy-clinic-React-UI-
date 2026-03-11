@@ -9,6 +9,7 @@ const slides = [
     image: slide1,
     title: "Pain Relief Physiotherapy",
     desc: "Evidence-based physiotherapy to reduce pain, restore movement, and improve quality of life.",
+    style: { objectPosition: "center 20%" }
   },
   {
     image: slide2,
@@ -42,6 +43,7 @@ const Hero = () => {
           key={index}
           src={slide.image}
           alt={slide.title}
+          style={slide.style}
           className={`absolute inset-0 w-full h-full 
           object-cover object-center md:object-top
           transition-all duration-1000 ease-in-out ${
