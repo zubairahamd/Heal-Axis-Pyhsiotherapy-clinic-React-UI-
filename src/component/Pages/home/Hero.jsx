@@ -16,6 +16,7 @@ const slides = [
     title: "Sports Injury Rehabilitation",
     desc: "Targeted treatment programs designed for faster and safer recovery from sports injuries.",
   },
+  
   {
     image: slide3,
     title: "Post Surgery Rehabilitation",
